@@ -1,0 +1,15 @@
+# dependencies (the plugin has none at runtime; checks may install some)
+node_modules/
+pnpm-lock.yaml
+
+# scratch and diagnostics
+*.log
+*.bak-*
+.opencode-usage-accept/
+.desktop-independence/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,33 @@
+{
+  "name": "dsh-opencode-go-usage",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenCode Go plan usage monitor for DeepSeek Harness: a quota bar under the chat input showing the 5h-rolling, weekly and monthly windows",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

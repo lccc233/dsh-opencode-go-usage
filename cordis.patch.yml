@@ -1,0 +1,17 @@
+# dsh-opencode-go-usage bundle patch: mounts the OpenCode Go usage monitor.
+#
+# The host half resolves the OpenCode Go API key through `ctx.credentials`
+# under `apiKeyEnv` (the reference the profile's `llm-pi-ai` provider already
+# uses), queries the official quota endpoint with it, and serves the cached
+# sample on a small JSON route of the web server. The browser half renders the
+# windows in the Composer dock below the chat input, so the key itself never
+# reaches the browser.
+- insert:
+    - id: opencode-go-usage
+      name: 'dsh-opencode-go-usage'
+      config:
+        apiKeyEnv: OPENCODE_GO_API_KEY
+        endpoint: https://opencode.ai/zen/go/v1/usage
+        refreshMs: 60000
+        timeoutMs: 10000
+        route: /opencode-go-usage/snapshot
