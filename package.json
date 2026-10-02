@@ -29,5 +29,24 @@
       "platform": "web"
     }
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lccc233/dsh-opencode-go-usage.git"
+  },
+  "homepage": "https://github.com/lccc233/dsh-opencode-go-usage#readme",
+  "bugs": {
+    "url": "https://github.com/lccc233/dsh-opencode-go-usage/issues"
+  },
+  "author": "lccc233",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "opencode",
+    "opencode-go",
+    "quota",
+    "usage",
+    "monitor"
+  ]
 }

@@ -62,7 +62,7 @@
 
 ```sh
 # 1. 把代码放到 profile 能解析到的位置
-git clone https://github.com/<you>/dsh-opencode-go-usage.git ~/.dsh/plugins/dsh-opencode-go-usage
+git clone https://github.com/lccc233/dsh-opencode-go-usage.git ~/.dsh/plugins/dsh-opencode-go-usage
 
 # 2. 链接进 profile（Windows 用 junction，POSIX 用软链接）
 #    Windows（PowerShell / cmd）：

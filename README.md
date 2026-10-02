@@ -73,7 +73,7 @@ enters the Loader graph at boot.
 
 ```sh
 # 1. get the code where the profile can resolve it
-git clone https://github.com/<you>/dsh-opencode-go-usage.git ~/.dsh/plugins/dsh-opencode-go-usage
+git clone https://github.com/lccc233/dsh-opencode-go-usage.git ~/.dsh/plugins/dsh-opencode-go-usage
 
 # 2. link it into the profile (Windows: create a junction; POSIX: symlink)
 #    Windows (PowerShell, cmd):
